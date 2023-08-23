@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>FreshVotes</title>
 </head>
 <body>
     <p>Welcome To FreshVotes</p>
-<p>JSNDJSNDJ</p>
+    <form name="loginForm"  method="post" th:action="@{/}">
+        <input type="submit" value="Login" />
+    </form>
 </body>
 </html>

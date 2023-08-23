@@ -5,42 +5,7 @@
 <!--    <title>FreshVotes Login</title>-->
 <!--</head>-->
 <!--<body>-->
-<!--&lt;!&ndash;<c:url value="/login" var="loginProcessingUrl"/>&ndash;&gt;-->
-<!--<form action="@{/Login}" method="post">-->
-<!--  <fieldset>-->
-<!--    <legend>Please Login</legend>-->
-<!--    &lt;!&ndash; use param.error assuming FormLoginConfigurer#failureUrl contains the query parameter error &ndash;&gt;-->
-<!--    <div th:if="${param.error != null}">-->
-<!--        Failed to login.-->
-<!--&lt;!&ndash;        <div th:if="${SPRING_SECURITY_LAST_EXCEPTION != null}">&ndash;&gt;-->
-<!--&lt;!&ndash;          Reason: <span th:text="${SPRING_SECURITY_LAST_EXCEPTION.message}" /></span>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--    </div>-->
-<!--    &lt;!&ndash; the configured LogoutConfigurer#logoutSuccessUrl is /login?logout and contains the query param logout &ndash;&gt;-->
-<!--    <div th:if="${param.logout != null}">-->
 
-<!--        You have been logged out.-->
-<!--    </div>-->
-<!--    <p>-->
-<!--      <label for="username">Username</label>-->
-<!--      <input type="text" id="username" name="username"/>-->
-<!--    </p>-->
-<!--    <p>-->
-<!--      <label for="password">Password</label>-->
-<!--      <input type="password" id="password" name="password"/>-->
-<!--    </p>-->
-<!--    &lt;!&ndash; if using RememberMeConfigurer make sure remember-me matches RememberMeConfigurer#rememberMeParameter &ndash;&gt;-->
-<!--    <p>-->
-<!--      <label for="remember-me">Remember Me?</label>-->
-<!--      <input type="checkbox" id="remember-me" name="remember-me"/>-->
-<!--    </p>-->
-<!--    <div>-->
-<!--      <input type="submit" value="log in" class="btn">Log in</input>-->
-<!--    </div>-->
-<!--  </fieldset>-->
-<!--</form>-->
-<!--</body>-->
-<!--</html>-->
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">

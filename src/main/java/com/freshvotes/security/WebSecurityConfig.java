@@ -57,17 +57,18 @@ public class WebSecurityConfig {
         http
                 .authorizeRequests()
                 .requestMatchers(AntPathRequestMatcher.antMatcher("/")).permitAll()
-                .requestMatchers(AntPathRequestMatcher.antMatcher("/login"))
-                .hasRole("USER")
+//                .requestMatchers(AntPathRequestMatcher.antMatcher("/login"))
+//                .hasRole("USER")
                 .anyRequest().hasRole("USER")
                 .and()
                 .formLogin(formLogin -> formLogin
                         .loginPage("/login") // Custom login page
-                        .defaultSuccessUrl("/index") // Redirect after successful login
+                        .defaultSuccessUrl("/dashboard") // Redirect after successful login
                         .permitAll()
         )
                 .logout(logout -> logout
-                        .logoutUrl("/logout")
+//                        .logoutUrl("/logout")
+                        .logoutSuccessUrl("/login")
                         .permitAll()
                 )
 
